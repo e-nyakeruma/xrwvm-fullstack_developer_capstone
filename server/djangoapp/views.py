@@ -3,7 +3,7 @@
 # from django.http import HttpResponseRedirect, HttpResponse
 from django.contrib.auth.models import User
 # from django.shortcuts import get_object_or_404, render, redirect
-from django.contrib.auth import logout
+# from django.contrib.auth import logout
 # from django.contrib import messages
 # from datetime import datetime
 
@@ -41,7 +41,6 @@ def login_user(request):
 
 # Create a `logout_request` view to handle sign out request
 def logout_request(request):
-    logout(request)
     data = {"userName": ""}
     return JsonResponse(data)
 
