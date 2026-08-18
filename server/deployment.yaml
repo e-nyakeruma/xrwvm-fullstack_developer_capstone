@@ -20,8 +20,7 @@ spec:
         run: dealership
     spec:
       containers:
-      - image: ibmcloud ce app update --name <your-app-name> --env KEY=VALUE --image registry.ng.bluemix.net/myrepo/myimage:v2
-
+      - image: us.icr.io/sn-labs-edwardnyaker/dealership:latest
         imagePullPolicy: Always
         name: dealership
         ports:
