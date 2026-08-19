@@ -15,6 +15,12 @@ sentiment_analyzer_url = os.getenv(
     default="http://localhost:5050/"
 )
 
+searchcars_url = os.getenv(
+    'searchcars_url',
+    default="http://localhost:3050/"
+)
+
+
 
 def get_request(endpoint, **kwargs):
     params = ""
@@ -55,3 +61,5 @@ def post_review(data_dict):
     except Exception as err:
         print(f"Unexpected {err=}, {type(err)=}")
         print("Network exception occurred")
+
+
