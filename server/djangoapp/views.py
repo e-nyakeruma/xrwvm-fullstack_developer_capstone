@@ -14,10 +14,10 @@ import json
 from django.views.decorators.csrf import csrf_exempt
 from .models import CarMake, CarModel
 from .populate import initiate
-from .restapis import(
-    get_request, 
-    analyze_review_sentiments, 
-    post_review, 
+from .restapis import (
+    get_request,
+    analyze_review_sentiments,
+    post_review,
     searchcars_request
 )
 
